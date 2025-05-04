@@ -38,6 +38,14 @@ git clone https://github.com/yourname/elk-stack-docker.git
 cd elk-stack-docker
 ```
 
+# Make sure filebeat.yml is owned by root and has strict permissions
+sudo chown root:root ./filebeat/filebeat.yml
+sudo chmod 644 ./filebeat/filebeat.yml
+
+# Ensure the log file is writable by your user (e.g., ubuntu)
+sudo chown $USER:$USER ./logs/app.log
+chmod 644 ./logs/app.log
+
 ### 2. Start the ELK Stack
 
 ```bash
