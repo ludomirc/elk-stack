@@ -5,5 +5,5 @@ filebeat.inputs:
       - /app/logs/*.log
 
 output.logstash:
-  hosts: ["logstash:5000"]
+  hosts: ["logstash:5044"]
 
