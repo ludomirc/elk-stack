@@ -1,9 +1,12 @@
 filebeat.inputs:
-  - type: container
+  - type: log
     paths:
-      - /var/lib/docker/containers/*/*.log
+      - /home/ubuntu/shared-logs/*.log   # Path to the logs in the shared folder
     processors:
-      - add_docker_metadata: ~
+      - add_docker_metadata: ~           # Adds Docker metadata if required
+      - decode_json_fields:
+          fields: ["message"]            # Decodes JSON logs in the "message" field
 
 output.logstash:
-  hosts: ["logstash:5044"]
+  hosts: ["logstash:5044"]             # Ensure Filebeat sends logs to Logstash
+

@@ -1,0 +1,5 @@
+{"message": "test log entry", "level": "info", "timestamp": "2025-05-05T08:26:09+00:00"}
+{"message": "test log entry", "level": "info", "timestamp": "2025-05-05T08:26:49+00:00"}
+{"message": "test log entry", "level": "info", "timestamp": "2025-05-05T08:28:48+00:00"}
+{"message": "test log entry", "level": "info", "timestamp": "2025-05-05T08:30:24+00:00"}
+{"level":"info","message":"Test log"}
