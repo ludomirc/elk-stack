@@ -1,7 +1,7 @@
 #!/bin/bash
 # Save as push.sh and fill in your token and repo
 
-GITHUB_USERNAME="beniamin.czaplicki@gmail.com"
+GITHUB_USERNAME="ludomirc"
 GITHUB_TOKEN="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"
 REPO_NAME="elk-stack"
 
